@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB72F1D51C44E4D50096BEC0 /* WRBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */; };
 		AB8406BE1C44D867008362F5 /* WRBaseClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8406BD1C44D867008362F5 /* WRBaseClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB8406C51C44D867008362F5 /* WRBaseClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8406BA1C44D867008362F5 /* WRBaseClasses.framework */; };
 		AB8406CA1C44D867008362F5 /* WRBaseClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8406C91C44D867008362F5 /* WRBaseClassesTests.swift */; };
+		AB8406D51C44D8BE008362F5 /* WRBaseTableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8406D41C44D8BE008362F5 /* WRBaseTableViewSource.swift */; };
+		ABFA7D5A1C49918B006EBCA0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA7D591C49918B006EBCA0 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRBaseTableViewCell.swift; sourceTree = "<group>"; };
 		AB8406BA1C44D867008362F5 /* WRBaseClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WRBaseClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8406BD1C44D867008362F5 /* WRBaseClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRBaseClasses.h; sourceTree = "<group>"; };
 		AB8406BF1C44D867008362F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8406C41C44D867008362F5 /* WRBaseClassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WRBaseClassesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8406C91C44D867008362F5 /* WRBaseClassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRBaseClassesTests.swift; sourceTree = "<group>"; };
 		AB8406CB1C44D867008362F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8406D41C44D8BE008362F5 /* WRBaseTableViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRBaseTableViewSource.swift; sourceTree = "<group>"; };
+		ABFA7D591C49918B006EBCA0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		AB8406BC1C44D867008362F5 /* WRBaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				ABFA7D5B1C499710006EBCA0 /* TableView */,
 				AB8406BD1C44D867008362F5 /* WRBaseClasses.h */,
 				AB8406BF1C44D867008362F5 /* Info.plist */,
 			);
@@ -84,6 +91,16 @@
 				AB8406CB1C44D867008362F5 /* Info.plist */,
 			);
 			path = WRBaseClassesTests;
+			sourceTree = "<group>";
+		};
+		ABFA7D5B1C499710006EBCA0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				AB8406D41C44D8BE008362F5 /* WRBaseTableViewSource.swift */,
+				AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */,
+				ABFA7D591C49918B006EBCA0 /* Extensions.swift */,
+			);
+			name = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8406D51C44D8BE008362F5 /* WRBaseTableViewSource.swift in Sources */,
+				ABFA7D5A1C49918B006EBCA0 /* Extensions.swift in Sources */,
+				AB72F1D51C44E4D50096BEC0 /* WRBaseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +328,7 @@
 		AB8406CF1C44D867008362F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +339,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.vrwim.WRBaseClasses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		AB8406D01C44D867008362F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +399,7 @@
 				AB8406D01C44D867008362F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB8406D11C44D867008362F5 /* Build configuration list for PBXNativeTarget "WRBaseClassesTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +408,7 @@
 				AB8406D31C44D867008362F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
