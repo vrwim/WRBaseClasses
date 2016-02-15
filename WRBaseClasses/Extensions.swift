@@ -22,6 +22,20 @@ extension UITableView {
 
 // MARK: -
 
+extension UICollectionView {
+    var source: WRBaseCollectionViewSource? {
+        get {
+            return nil
+        }
+        set {
+            dataSource = newValue
+            delegate = newValue
+        }
+    }
+}
+
+// MARK: -
+
 extension UIView {
 
 	// MARK: Edges
