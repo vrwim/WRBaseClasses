@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1691EC1C6F441B00E8EDAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1691EB1C6F441B00E8EDAD /* AppDelegate.swift */; };
+		AB1691EE1C6F441B00E8EDAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1691ED1C6F441B00E8EDAD /* ViewController.swift */; };
+		AB1691F11C6F441B00E8EDAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1691EF1C6F441B00E8EDAD /* Main.storyboard */; };
+		AB1691F31C6F441B00E8EDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1691F21C6F441B00E8EDAD /* Assets.xcassets */; };
+		AB1691F61C6F441B00E8EDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1691F41C6F441B00E8EDAD /* LaunchScreen.storyboard */; };
 		AB3456C01C6A561A00FEDF2D /* AttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3456BF1C6A561900FEDF2D /* AttributedStringBuilder.swift */; };
 		AB561FF11C723E7700B07D98 /* AutoLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB561FF01C723E7700B07D98 /* AutoLayoutHelper.swift */; };
 		AB72F1D51C44E4D50096BEC0 /* WRBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */; };
@@ -30,6 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB1691E91C6F441A00E8EDAD /* WRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1691EB1C6F441B00E8EDAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB1691ED1C6F441B00E8EDAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB1691F01C6F441B00E8EDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB1691F21C6F441B00E8EDAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB1691F51C6F441B00E8EDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB1691F71C6F441B00E8EDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3456BF1C6A561900FEDF2D /* AttributedStringBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilder.swift; sourceTree = "<group>"; };
 		AB561FF01C723E7700B07D98 /* AutoLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutHelper.swift; sourceTree = "<group>"; };
 		AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRBaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -46,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AB1691E61C6F441A00E8EDAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB8406B61C44D867008362F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,11 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB1691EA1C6F441B00E8EDAD /* WRDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AB1691EB1C6F441B00E8EDAD /* AppDelegate.swift */,
+				AB1691ED1C6F441B00E8EDAD /* ViewController.swift */,
+				AB1691EF1C6F441B00E8EDAD /* Main.storyboard */,
+				AB1691F21C6F441B00E8EDAD /* Assets.xcassets */,
+				AB1691F41C6F441B00E8EDAD /* LaunchScreen.storyboard */,
+				AB1691F71C6F441B00E8EDAD /* Info.plist */,
+			);
+			path = WRDemo;
+			sourceTree = "<group>";
+		};
 		AB8406B01C44D867008362F5 = {
 			isa = PBXGroup;
 			children = (
 				AB8406BC1C44D867008362F5 /* WRBaseClasses */,
 				AB8406C81C44D867008362F5 /* WRBaseClassesTests */,
+				AB1691EA1C6F441B00E8EDAD /* WRDemo */,
 				AB8406BB1C44D867008362F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +111,7 @@
 			children = (
 				AB8406BA1C44D867008362F5 /* WRBaseClasses.framework */,
 				AB8406C41C44D867008362F5 /* WRBaseClassesTests.xctest */,
+				AB1691E91C6F441A00E8EDAD /* WRDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +171,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AB1691E81C6F441A00E8EDAD /* WRDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1691FA1C6F441B00E8EDAD /* Build configuration list for PBXNativeTarget "WRDemo" */;
+			buildPhases = (
+				AB1691E51C6F441A00E8EDAD /* Sources */,
+				AB1691E61C6F441A00E8EDAD /* Frameworks */,
+				AB1691E71C6F441A00E8EDAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WRDemo;
+			productName = WRDemo;
+			productReference = AB1691E91C6F441A00E8EDAD /* WRDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AB8406B91C44D867008362F5 /* WRBaseClasses */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB8406CE1C44D867008362F5 /* Build configuration list for PBXNativeTarget "WRBaseClasses" */;
@@ -183,6 +234,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Wim Van Renterghem";
 				TargetAttributes = {
+					AB1691E81C6F441A00E8EDAD = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					AB8406B91C44D867008362F5 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -197,6 +251,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AB8406B01C44D867008362F5;
 			productRefGroup = AB8406BB1C44D867008362F5 /* Products */;
@@ -205,11 +260,22 @@
 			targets = (
 				AB8406B91C44D867008362F5 /* WRBaseClasses */,
 				AB8406C31C44D867008362F5 /* WRBaseClassesTests */,
+				AB1691E81C6F441A00E8EDAD /* WRDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AB1691E71C6F441A00E8EDAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1691F61C6F441B00E8EDAD /* LaunchScreen.storyboard in Resources */,
+				AB1691F31C6F441B00E8EDAD /* Assets.xcassets in Resources */,
+				AB1691F11C6F441B00E8EDAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB8406B81C44D867008362F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +293,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AB1691E51C6F441A00E8EDAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1691EE1C6F441B00E8EDAD /* ViewController.swift in Sources */,
+				AB1691EC1C6F441B00E8EDAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB8406B51C44D867008362F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,7 +334,48 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		AB1691EF1C6F441B00E8EDAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB1691F01C6F441B00E8EDAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB1691F41C6F441B00E8EDAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB1691F51C6F441B00E8EDAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		AB1691F81C6F441B00E8EDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WRDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = be.vrwim.WRDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB1691F91C6F441B00E8EDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WRDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = be.vrwim.WRDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		AB8406CC1C44D867008362F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -407,6 +523,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AB1691FA1C6F441B00E8EDAD /* Build configuration list for PBXNativeTarget "WRDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1691F81C6F441B00E8EDAD /* Debug */,
+				AB1691F91C6F441B00E8EDAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AB8406B41C44D867008362F5 /* Build configuration list for PBXProject "WRBaseClasses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
