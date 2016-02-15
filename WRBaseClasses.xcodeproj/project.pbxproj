@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB3456C01C6A561A00FEDF2D /* AttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3456BF1C6A561900FEDF2D /* AttributedStringBuilder.swift */; };
+		AB561FF11C723E7700B07D98 /* AutoLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB561FF01C723E7700B07D98 /* AutoLayoutHelper.swift */; };
 		AB72F1D51C44E4D50096BEC0 /* WRBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */; };
 		AB8406BE1C44D867008362F5 /* WRBaseClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8406BD1C44D867008362F5 /* WRBaseClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB8406C51C44D867008362F5 /* WRBaseClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8406BA1C44D867008362F5 /* WRBaseClasses.framework */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		AB3456BF1C6A561900FEDF2D /* AttributedStringBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilder.swift; sourceTree = "<group>"; };
+		AB561FF01C723E7700B07D98 /* AutoLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutHelper.swift; sourceTree = "<group>"; };
 		AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRBaseTableViewCell.swift; sourceTree = "<group>"; };
 		AB8406BA1C44D867008362F5 /* WRBaseClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WRBaseClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8406BD1C44D867008362F5 /* WRBaseClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRBaseClasses.h; sourceTree = "<group>"; };
@@ -84,10 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				AB8901A71C6086E700A87248 /* CollectionView */,
+				ABFA7D591C49918B006EBCA0 /* Extensions.swift */,
 				ABFA7D5B1C499710006EBCA0 /* TableView */,
 				AB8406BD1C44D867008362F5 /* WRBaseClasses.h */,
 				AB8406BF1C44D867008362F5 /* Info.plist */,
 				AB3456BF1C6A561900FEDF2D /* AttributedStringBuilder.swift */,
+				AB561FF01C723E7700B07D98 /* AutoLayoutHelper.swift */,
 			);
 			path = WRBaseClasses;
 			sourceTree = "<group>";
@@ -115,7 +119,6 @@
 			children = (
 				AB8406D41C44D8BE008362F5 /* WRBaseTableViewSource.swift */,
 				AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */,
-				ABFA7D591C49918B006EBCA0 /* Extensions.swift */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				AB8901A91C60870100A87248 /* WRBaseCollectionViewSource.swift in Sources */,
 				AB8901AB1C608B3800A87248 /* WRBaseCollectionViewCell.swift in Sources */,
+				AB561FF11C723E7700B07D98 /* AutoLayoutHelper.swift in Sources */,
 				AB8406D51C44D8BE008362F5 /* WRBaseTableViewSource.swift in Sources */,
 				ABFA7D5A1C49918B006EBCA0 /* Extensions.swift in Sources */,
 				AB3456C01C6A561A00FEDF2D /* AttributedStringBuilder.swift in Sources */,
