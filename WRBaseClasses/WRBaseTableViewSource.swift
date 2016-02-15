@@ -8,8 +8,8 @@
 
 import UIKit
 
-class WRBaseTableViewSource: NSObject, UITableViewDataSource, UITableViewDelegate {
-    
+class WRBaseTableViewSource : NSObject, UITableViewDataSource, UITableViewDelegate {
+
     var prototypes: [String: WRBaseTableViewCell] = [:]
     
     /// Setting this property to > 1 tells you want to use multiple sections
@@ -21,14 +21,18 @@ class WRBaseTableViewSource: NSObject, UITableViewDataSource, UITableViewDelegat
     var staticRowHeight: CGFloat = -1
     
     /// The list of objects in this table
-    var dataObjects: [AnyObject] = []
+    var dataObjects: [AnyObject] {
+        get {
+            fatalError("You need to override this property")
+        }
+    }
     
     /// If set, will alternate these colors over your rows
     var alternatingColors: [UIColor] = []
     
     /// Override this method to tell the tableview what cellIdentifier to use
     func cellIdentifierForObject(object: AnyObject) -> String {
-        return ""
+        fatalError("You need to override this method")
     }
     
     /// MARK: - UITableViewDataSource methods
@@ -68,7 +72,7 @@ class WRBaseTableViewSource: NSObject, UITableViewDataSource, UITableViewDelegat
         cellId = cellIdentifierForObject(data)
         
         if prototypes[cellId] == nil {
-            prototypes[cellId] = tableView.dequeueReusableCellWithIdentifier(cellId) as! WRBaseTableViewCell
+            prototypes[cellId] = tableView.dequeueReusableCellWithIdentifier(cellId) as? WRBaseTableViewCell
         }
         
         return prototypes [cellId]!.getHeight (data);

@@ -9,13 +9,13 @@
 import UIKit
 
 extension UITableView {
-    var source: WRBaseTableViewSource? {
-        get {
-            return nil
-        }
-        set {
-            dataSource = newValue
-            delegate = newValue
-        }
-    }
+	var source: WRBaseTableViewSource? {
+		get {
+			return nil
+		}
+		set {
+			dataSource = newValue
+			delegate = newValue
+		}
+	}
 }

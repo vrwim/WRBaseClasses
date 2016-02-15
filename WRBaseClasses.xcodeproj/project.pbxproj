@@ -12,6 +12,8 @@
 		AB8406C51C44D867008362F5 /* WRBaseClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8406BA1C44D867008362F5 /* WRBaseClasses.framework */; };
 		AB8406CA1C44D867008362F5 /* WRBaseClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8406C91C44D867008362F5 /* WRBaseClassesTests.swift */; };
 		AB8406D51C44D8BE008362F5 /* WRBaseTableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8406D41C44D8BE008362F5 /* WRBaseTableViewSource.swift */; };
+		AB8901A91C60870100A87248 /* WRBaseCollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8901A81C60870100A87248 /* WRBaseCollectionViewSource.swift */; };
+		AB8901AB1C608B3800A87248 /* WRBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8901AA1C608B3800A87248 /* WRBaseCollectionViewCell.swift */; };
 		ABFA7D5A1C49918B006EBCA0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA7D591C49918B006EBCA0 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		AB8406C91C44D867008362F5 /* WRBaseClassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRBaseClassesTests.swift; sourceTree = "<group>"; };
 		AB8406CB1C44D867008362F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8406D41C44D8BE008362F5 /* WRBaseTableViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRBaseTableViewSource.swift; sourceTree = "<group>"; };
+		AB8901A81C60870100A87248 /* WRBaseCollectionViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRBaseCollectionViewSource.swift; sourceTree = "<group>"; };
+		AB8901AA1C608B3800A87248 /* WRBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRBaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		ABFA7D591C49918B006EBCA0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +81,7 @@
 		AB8406BC1C44D867008362F5 /* WRBaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				AB8901A71C6086E700A87248 /* CollectionView */,
 				ABFA7D5B1C499710006EBCA0 /* TableView */,
 				AB8406BD1C44D867008362F5 /* WRBaseClasses.h */,
 				AB8406BF1C44D867008362F5 /* Info.plist */,
@@ -91,6 +96,15 @@
 				AB8406CB1C44D867008362F5 /* Info.plist */,
 			);
 			path = WRBaseClassesTests;
+			sourceTree = "<group>";
+		};
+		AB8901A71C6086E700A87248 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				AB8901A81C60870100A87248 /* WRBaseCollectionViewSource.swift */,
+				AB8901AA1C608B3800A87248 /* WRBaseCollectionViewCell.swift */,
+			);
+			name = CollectionView;
 			sourceTree = "<group>";
 		};
 		ABFA7D5B1C499710006EBCA0 /* TableView */ = {
@@ -211,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8901A91C60870100A87248 /* WRBaseCollectionViewSource.swift in Sources */,
+				AB8901AB1C608B3800A87248 /* WRBaseCollectionViewCell.swift in Sources */,
 				AB8406D51C44D8BE008362F5 /* WRBaseTableViewSource.swift in Sources */,
 				ABFA7D5A1C49918B006EBCA0 /* Extensions.swift in Sources */,
 				AB72F1D51C44E4D50096BEC0 /* WRBaseTableViewCell.swift in Sources */,
