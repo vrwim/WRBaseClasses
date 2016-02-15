@@ -44,6 +44,7 @@
 		AB1691F71C6F441B00E8EDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3456BF1C6A561900FEDF2D /* AttributedStringBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilder.swift; sourceTree = "<group>"; };
 		AB561FF01C723E7700B07D98 /* AutoLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutHelper.swift; sourceTree = "<group>"; };
+		AB561FF21C7260D300B07D98 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		AB72F1D41C44E4D50096BEC0 /* WRBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRBaseTableViewCell.swift; sourceTree = "<group>"; };
 		AB8406BA1C44D867008362F5 /* WRBaseClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WRBaseClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8406BD1C44D867008362F5 /* WRBaseClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRBaseClasses.h; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		AB8406B01C44D867008362F5 = {
 			isa = PBXGroup;
 			children = (
+				AB561FF21C7260D300B07D98 /* readme.md */,
 				AB8406BC1C44D867008362F5 /* WRBaseClasses */,
 				AB8406C81C44D867008362F5 /* WRBaseClassesTests */,
 				AB1691EA1C6F441B00E8EDAD /* WRDemo */,
