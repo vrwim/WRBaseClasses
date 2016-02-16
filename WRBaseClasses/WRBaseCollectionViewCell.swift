@@ -9,7 +9,7 @@
 import Foundation
 
 class WRBaseCollectionViewCell: UICollectionViewCell {
-    func setData(data: AnyObject) -> CGFloat {
-        fatalError("This method needs to be overridden")
-    }
+	func setData(data: AnyObject) -> CGFloat {
+		fatalError("This method needs to be overridden")
+	}
 }

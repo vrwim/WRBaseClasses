@@ -9,10 +9,10 @@
 import UIKit
 
 class WRBaseTableViewCell: UITableViewCell {
-    func getHeight(data: AnyObject) -> CGFloat {
-        fatalError("This method needs to be overridden")
-    }
-    func setData(data: AnyObject) -> CGFloat {
-        fatalError("This method needs to be overridden")
-    }
+	func getHeight(data: AnyObject) -> CGFloat {
+		fatalError("This method needs to be overridden")
+	}
+	func setData(data: AnyObject) -> CGFloat {
+		fatalError("This method needs to be overridden")
+	}
 }

@@ -21,13 +21,13 @@ public class AttributedStringBuilder
 	public init(attributedString: NSAttributedString) {
 		self.attributedString = NSMutableAttributedString(attributedString: attributedString)
 	}
-    
-    /// Gets the HTML representing this attributed string.
-	public var HTML: String {
-        get {
-            let htmlData = try! attributedString.dataFromRange(NSRange(location: 0, length: attributedString.length), documentAttributes: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType])
-            let retString = NSString(data: htmlData, encoding: NSUTF8StringEncoding) as! String
-            return retString
+
+	/// Gets the HTML representing this attributed string.
+	public var html: String {
+		get {
+			let htmlData = try! attributedString.dataFromRange(NSRange(location: 0, length: attributedString.length), documentAttributes: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType])
+			let retString = NSString(data: htmlData, encoding: NSUTF8StringEncoding) as! String
+			return retString
 		}
 	}
 
@@ -81,16 +81,16 @@ public struct Style {
 
 	public var stringAttributes: [String: AnyObject] {
 		get {
-            let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.minimumLineHeight = minimumLineHeight
-            paragraphStyle.alignment = textAlignment
-            
+			let paragraphStyle = NSMutableParagraphStyle()
+			paragraphStyle.minimumLineHeight = minimumLineHeight
+			paragraphStyle.alignment = textAlignment
+
 			let stringAttributes: [String: AnyObject] =
-            [
-                NSFontAttributeName:font,
-                NSForegroundColorAttributeName:color,
-                NSParagraphStyleAttributeName:paragraphStyle
-            ]
+				[
+					NSFontAttributeName: font,
+					NSForegroundColorAttributeName: color,
+					NSParagraphStyleAttributeName: paragraphStyle
+				]
 			return stringAttributes
 		}
 	}
