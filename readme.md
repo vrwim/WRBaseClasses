@@ -28,4 +28,4 @@ Things I need to make before this library is 'finished' for me:
 
 ## Disclaimer
 
-Everything here was originally written by me in Xamarin.iOS, and as such variable names may be incorrect. Functionally, the code should work.
+Everything here was originally written by me in Xamarin.iOS, and as such variable names may be incorrectly named. Functionally, the code should work.
