@@ -9,6 +9,7 @@
 import UIKit
 
 extension UITableView {
+    /// An easier way to set both the `dataSource` and the `delegate`, this is the preferred way of using `WRBaseTableViewSource`
 	var source: WRBaseTableViewSource? {
 		get {
 			return nil
@@ -23,6 +24,7 @@ extension UITableView {
 // MARK: -
 
 extension UICollectionView {
+    /// An easier way to set both the `dataSource` and the `delegate`, this is the preferred way of using `WRBaseCollectionViewSource`
     var source: WRBaseCollectionViewSource? {
         get {
             return nil
