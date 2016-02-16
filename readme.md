@@ -1,6 +1,6 @@
 # WRBaseClasses
 
-This is a library where I put all the useful classes I create to simplify my life as a developer. Feel free to fork and improve this library!
+This is a Swift library where I put all the useful classes I create to simplify my life as a developer. Feel free to fork and improve this library!
 
 ## WRBaseTableViewSource
 
@@ -16,4 +16,16 @@ This helps to build `NSAttributedString`s with ease, just define a style to use,
 
 ## AutoLayoutHelper
 
-This class provides extensions to `NSLayoutConstraint`
+This class provides a simple, declarative way to define constraints. Instead of typing the entire `view.addConstraint(NSLayoutConstraint(item: view, attribute: attribute, relatedBy: relation, toItem: otherView, attribute: otherAttribute, multiplier: 1, constant: 0))`, you can simply type `label.top.Equals(view.top).active = true`.
+
+## To do
+
+Things I need to make before this library is 'finished' for me:
+
+ - FlowLayout (just like Android, simply add a view and define a frame for that view and it will flow from left to right and take the space it needs)
+ - ViewPager (again just like Android, but with some customizations to prettify it)
+ - Some more things I come up with!
+
+## Disclaimer
+
+Everything here was originally written by me in Xamarin.iOS, and as such variable names may be incorrect. Functionally, the code should work.
